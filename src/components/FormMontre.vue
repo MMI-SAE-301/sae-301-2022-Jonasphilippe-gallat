@@ -2,7 +2,7 @@
 import type { Montre } from "@/types";
 import { ref } from "vue";
 import { colors } from "@/types"
-import MontreProfil from "./MontreProfil.vue";
+import MontreFace from "./MontreFace.vue";
 
 
 const props = defineProps<{
@@ -16,7 +16,7 @@ const montre = ref<Montre>(props.data ?? {});
 <template>
     <div class="flex bg-beige  ">
         <div class=" w-full h-full">
-            <MontreProfil v-bind="montre" id="profil" />
+            <MontreFace v-bind="montre" id="profil" />
         </div>
 
         <div class="float-right p-4 bg-white ">

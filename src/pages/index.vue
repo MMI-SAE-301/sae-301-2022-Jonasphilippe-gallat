@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import MontreProfil from "../components/MontreProfil.vue";
+import MontreFace from "../components/MontreFace.vue";
 import type { Montre } from "../types";
 const exemples: Montre[] = [{
   bracelet: "#0FFFF0",
-  contour_exterieur: "#0000FF",
-  contour_interieur: "#FFFF00",
+  cadran_exterieur: "#0000FF",
+  cadran_interieur: "#FFFF00",
   fond_boitier: "#000000",
-  contour_exterieur_2: "#0000FF",
-  contour_interieur_2: "#000000",
-  fond_boitier_2: "#0000FF",
+  bouton: "#000000",
+
 }];
 </script>
 
@@ -16,15 +15,17 @@ const exemples: Montre[] = [{
 <template>
   <section>
     <h1 class="text-2xl">Exemples de Montres</h1>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-row gap-2">
       <div class="w-64 flex flex-row gap-10">
         <RouterLink v-for="Exemple, index in exemples" :to="{
           name: 'montre-exemple-data',
           params: { data: JSON.stringify(Exemple) },
         }">
-          <MontreProfil class="w-64" v-bind="Exemple" />
-          <MontreProfil />
-
+          <div class=" p-16 flex flex-row gap-24">
+            <MontreFace class="w-64" v-bind="Exemple" />
+            <MontreFace class="w-64" v-bind="Exemple" />
+            <MontreFace class="w-64" />
+          </div>
         </RouterLink>
       </div>
     </div>

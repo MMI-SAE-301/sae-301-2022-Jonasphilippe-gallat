@@ -1,11 +1,12 @@
 export interface Montre {
     bracelet?: string;
-    contour_exterieur?: string;
-    contour_interieur?: string;
+    cadran_exterieur?: string;
+    cadran_interieur?: string;
     fond_boitier?: string;
-    contour_exterieur_2?: string;
-    contour_interieur_2?: string;
-    fond_boitier_2?: string;
+    bouton?: string;
+
+
+
 
 }
 
