@@ -7,9 +7,6 @@ withDefaults(defineProps<Montre>(), {
     cadran_interieur: "white",
     fond_boitier: "white",
     bouton: "white",
-
-
-
 });
 </script>
 
@@ -170,7 +167,7 @@ withDefaults(defineProps<Montre>(), {
                 d="M588.6,217.1c1.3-63.4-.9-109.4,1-173.4,0,0,14.1-5.6,92.5-6.9s103.3,6,103.3,6,4,100.9,3.8,181.8c0,0-67.5-31.9-115.6-33.7S588.1,248.1,588.6,217.1Z"
                 transform="translate(-487.9 -36.4)" :fill="bracelet"
                 style="fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px" />
-            <path class="bracelet" id="bracelet_haut-2" data-name="bracelet_haut"
+            <path class="bracelet" id="bracelet_haut-2" data-name="bracelet"
                 d="M792.6,544.6c-2,69.1-.4,119.1-3,188.9,0,0-14.2,6.1-92.7,7.1s-103.2-7-103.2-7-2.8-109.9-1.7-198.1c0,0,67.2,35.1,115.3,37.3S793.5,510.8,792.6,544.6Z"
                 transform="translate(-487.9 -36.4)" :fill="bracelet"
                 style="fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px" />
@@ -178,21 +175,26 @@ withDefaults(defineProps<Montre>(), {
 
 
         <g id="boitier">
-            <path class="cadran_exterieur" id="contour_exterieur"
+
+            <path class="cadran_exterieur" id="cadran_exterieur"
                 d="M745.6,634.6H634a143.9,143.9,0,0,1-102.7-43.4h0A151.2,151.2,0,0,1,488.1,485V294.3A151.4,151.4,0,0,1,531.3,188h0A144.2,144.2,0,0,1,634,144.7H745.6A144.2,144.2,0,0,1,848.3,188h0a151.4,151.4,0,0,1,43.2,106.3V485a151.2,151.2,0,0,1-43.2,106.2h0A143.9,143.9,0,0,1,745.6,634.6Z"
                 transform="translate(-487.9 -36.4)" :fill="cadran_exterieur"
                 style="fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px" />
-            <path class="cadran_interieur" id="contour_interieur"
+
+            <path class="cadran_interieur" id="cadran_interieur"
                 d="M738,606.2H641.7a128.5,128.5,0,0,1-92-38.9h0a130.7,130.7,0,0,1-37-91.2V307.4a130.7,130.7,0,0,1,37-91.2h0a128.5,128.5,0,0,1,92-38.9H738a128.5,128.5,0,0,1,92,38.9h0a130.6,130.6,0,0,1,36.9,91.2V476.1A130.6,130.6,0,0,1,830,567.3h0A128.5,128.5,0,0,1,738,606.2Z"
                 transform="translate(-487.9 -36.4)" :fill="cadran_interieur"
                 style="fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px" />
+
             <path class="fond_boitier" id="fond_boitier"
                 d="M732.6,587h-84a115.4,115.4,0,0,1-81.7-34.1h0a117.4,117.4,0,0,1-33.8-82.4V316.4A117.4,117.4,0,0,1,566.9,234h0a115,115,0,0,1,81.7-34.1h84A115,115,0,0,1,814.3,234h0a117.4,117.4,0,0,1,33.8,82.4V470.5a117.4,117.4,0,0,1-33.8,82.4h0A115.4,115.4,0,0,1,732.6,587Z"
                 transform="translate(-487.9 -36.4)" :fill="fond_boitier"
                 style="stroke:#000;stroke-miterlimit:10;stroke-width:0.5px" />
+
             <path class="bouton" id="bouton_1" d="M892.1,433.5c6.3-1.7,7.1,2.9,7-62.2-.1-61.6-.5-58.6-7.1-61Z"
                 transform="translate(-487.9 -36.4)" :fill="bouton"
                 style="fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px" />
+
             <path class="bouton" id="bouton_bas"
                 d="M627.4,634.9c1.9,25.4-2.8,28.9,64.7,28.6,63.9-.2,60.8-1.5,63.3-28.6Z"
                 transform="translate(-487.9 -36.4)" :fill="bouton"

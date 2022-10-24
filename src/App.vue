@@ -1,18 +1,56 @@
 <template>
   <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
-    <ul>
-      <li>
-        <router-link class="text-red-600 underline" to="/">
-          lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
-        </router-link>
-      </li>
+    <div class="h-full flex flex-row  justify-between">
+      <div class="float-left m-4 ml-10">
+        <router-link class="text-black font-black " to="/">
+          <p class="font-black text-lg">TikTaK</p>
 
-    </ul>
+        </router-link>
+      </div>
+      <div class="flex flex-row gap-8 m-4 justify-center">
+
+
+
+        <span>
+          <router-link class="text-black font-black " to="/index">
+
+            <code class="font-mono">Accueil</code>
+          </router-link>
+        </span><span>
+          <router-link class="text-black font-black " to="/Personnalisation">
+
+            <code class="font-mono">Personnalisation</code>
+          </router-link>
+        </span> <span>
+          <router-link class="text-black font-black " to="/Listeproduit">
+
+            <code class="font-mono">Nos produits</code>
+          </router-link>
+        </span>
+
+
+      </div>
+      <div class="flex flex-row gap-4 justify-center m-4 mr-10">
+        <div>
+          <router-link class="text-black font-black " to="/Login">
+            <img class="h-9" src="../src/assets/account.png" alt="account">
+
+          </router-link>
+
+        </div>
+        <div>
+          <router-link class="text-black font-black " to="/Personnalisation">
+            <button class="bg-blue-700 h-9 w-48 rounded-full text-lg font-semibold">
+              Personnaliser
+            </button>
+
+          </router-link>
+
+        </div>
+
+
+      </div>
+    </div>
   </nav>
 
   <!-- Affiche les pages -->
