@@ -2,9 +2,7 @@
 import type { Montre } from "@/types";
 withDefaults(defineProps<Montre>(), {
 
-    bracelet_milieu: "white",
-    bracelet_haut: "white",
-    bracelet_bas: "white",
+    bracelet: "white",
     contour_exterieur: "white",
     contour_interieur: "white",
     fond_boitier: "white",
@@ -170,17 +168,17 @@ withDefaults(defineProps<Montre>(), {
 
 
         <g id="bracelet">
-            <path class="bracelet_milieu" id="bracelet_milieu"
+            <path class="bracelet" id="bracelet_milieu"
                 d="M550.4,73.4S602.6,53.1,649,54.5s95.6,16,95.6,16-29,271-26.1,349.2S746.1,727,746.1,727s-47.9,21.7-92.8,18.8-97.1-17.4-97.1-17.4,23.9-239.1,23.9-333.3S550.4,73.4,550.4,73.4Z"
-                transform="translate(-415.6 -45.6)" :fill="bracelet_milieu"
+                transform="translate(-415.6 -45.6)" :fill="bracelet"
                 style="fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px" />
-            <path class="bracelet_haut" id="bracelet_haut"
+            <path class="bracelet" id="bracelet_haut"
                 d="M509.8,199.4S549,127,544.6,73.4c0,0,17.4-27.6,102.9-27.6S757.7,64.7,757.7,64.7s14.7,110.1,35,130.4c0,0-95.9,18.8-148.1,18.8S509.8,199.4,509.8,199.4Z"
-                transform="translate(-415.6 -45.6)" :fill="bracelet_haut"
+                transform="translate(-415.6 -45.6)" :fill="bracelet"
                 style="fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px" />
-            <path class="bracelet_bas" id="bracelet_bas"
+            <path class="bracelet" id="bracelet_bas"
                 d="M795.1,607.8s-41.8,70.9-39.5,124.7c0,0-18.5,26.8-103.9,23.6S542.4,733,542.4,733s-10.6-110.6-30.1-131.6c0,0,96.6-15.2,148.7-13.2S795.1,607.8,795.1,607.8Z"
-                transform="translate(-415.6 -45.6)" :fill="bracelet_bas"
+                transform="translate(-415.6 -45.6)" :fill="bracelet"
                 style="fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px" />
         </g>
 

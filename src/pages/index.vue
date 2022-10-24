@@ -2,9 +2,13 @@
 import MontreProfil from "../components/MontreProfil.vue";
 import type { Montre } from "../types";
 const exemples: Montre[] = [{
-  bracelet_milieu: "#000000",
-  bracelet_haut: "#000000",
-  bracelet_bas: "#000000",
+  bracelet: "#0FFFF0",
+  contour_exterieur: "#0000FF",
+  contour_interieur: "#FFFF00",
+  fond_boitier: "#000000",
+  contour_exterieur_2: "#0000FF",
+  contour_interieur_2: "#000000",
+  fond_boitier_2: "#0000FF",
 }];
 </script>
 
@@ -19,8 +23,12 @@ const exemples: Montre[] = [{
           params: { data: JSON.stringify(Exemple) },
         }">
           <MontreProfil class="w-64" v-bind="Exemple" />
+          <MontreProfil />
+
         </RouterLink>
       </div>
     </div>
   </section>
+
+
 </template>
