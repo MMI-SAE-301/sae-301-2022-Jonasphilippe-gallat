@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { Montre } from "@/types";
 import { ref } from "vue";
-import { colors } from "@/types"
+import { colors } from "@/types";
+import { shadowcolors } from "@/types";
 import MontreFace from "./MontreFace.vue";
 
 
@@ -26,8 +27,8 @@ const montre = ref<Montre>(props.data ?? {});
 
 
 
-                <p>bracelet</p>
-                <FormKit name="bracelet_bas" label="Bracelet bas" value="#FFFFFF" type="radio" :options="colors"
+
+                <FormKit name="bracelet" label="Bracelet" value="#FFFFFF" type="radio" :options="colors"
                     :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }" input-class="peer sr-only"
                     options-class="flex gap-1 mb-3 mt-1">
                     <template #label="context">
@@ -37,7 +38,7 @@ const montre = ref<Montre>(props.data ?? {});
                     </template>
                 </FormKit>
 
-                <FormKit name="bracelet_haut" label="Bracelet haut" value="#FFFFFF" type="radio" :options="colors"
+                <FormKit name="cadran_exterieur" label="Cadran exterieur" value="#FFFFFF" type="radio" :options="colors"
                     :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }" input-class="peer sr-only"
                     options-class="flex gap-1 mb-3 mt-1">
                     <template #label="context">
@@ -46,6 +47,38 @@ const montre = ref<Montre>(props.data ?? {});
                         <span class="sr-only">{{ context.option.label }}</span>
                     </template>
                 </FormKit>
+
+                <FormKit name="cadran_interieur" label="Cadran interieur" value="#FFFFFF" type="radio" :options="colors"
+                    :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }" input-class="peer sr-only"
+                    options-class="flex gap-1 mb-3 mt-1">
+                    <template #label="context">
+                        <div class="h-4 w-6  border-2 peer-checked:border-black"
+                            :style="{ backgroundColor: context.option.value }" />
+                        <span class="sr-only">{{ context.option.label }}</span>
+                    </template>
+                </FormKit>
+
+                <FormKit name="fond_boitier" label="Fond d'écran" value="#FFFFFF" type="radio" :options="shadowcolors"
+                    :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }" input-class="peer sr-only"
+                    options-class="flex gap-1 mb-3 mt-1">
+                    <template #label="context">
+                        <div class="h-4 w-6  border-2 peer-checked:border-black"
+                            :style="{ backgroundColor: context.option.value }" />
+                        <span class="sr-only">{{ context.option.label }}</span>
+                    </template>
+                </FormKit>
+
+                <FormKit name="bouton" label="Boutons" value="#FFFFFF" type="radio" :options="colors"
+                    :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }" input-class="peer sr-only"
+                    options-class="flex gap-1 mb-3 mt-1">
+                    <template #label="context">
+                        <div class="h-4 w-6  border-2 peer-checked:border-black"
+                            :style="{ backgroundColor: context.option.value }" />
+                        <span class="sr-only">{{ context.option.label }}</span>
+                    </template>
+                </FormKit>
+
+
 
             </FormKit>
         </div>

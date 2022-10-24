@@ -6,7 +6,7 @@ const exemples: Montre[] = [{
   cadran_exterieur: "#0000FF",
   cadran_interieur: "#FFFF00",
   fond_boitier: "#000000",
-  bouton: "#000000",
+  bouton: "#0FFFF00",
 
 }];
 </script>
