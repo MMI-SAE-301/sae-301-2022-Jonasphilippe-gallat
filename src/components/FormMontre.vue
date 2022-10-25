@@ -4,21 +4,38 @@ import { ref } from "vue";
 import { colors } from "@/types";
 import { shadowcolors } from "@/types";
 import MontreFace from "./MontreFace.vue";
+import { useRouter } from "vue-router";
 
-
-const props = defineProps<{
-    name?: string;
-    label?: string;
-}>();
+const router = useRouter();
+const props = defineProps(["id", "montre"]);
 
 const montre = ref<Montre>(props.data ?? {});
+
+if (props.id) {
+    let { data, error } = await supabase
+        .from("montre")
+        .select("*")
+        .eq("id", props.id);
+    if (error || !data)
+        console.log("n'a pas pu charger la table Montre :", error);
+    else montre.value = data[0];
+}
+
+async function upsertmontre(dataForm, node) {
+    const { data, error } = await supabase.from("montre").upsert(dataForm);
+    if (error) node.setErrors([error.message]);
+    else {
+        node.setErrors([]);
+        router.push({ name: "montre-edit-id", params: { id: data[0].id } });
+    }
+}
 
 </script>
 <template>
     <div class="flex justify-between gap-36 bg-beige  ">
         <div class="float-right p-4 bg-white ">
 
-            <FormKit type="form" v-model="montre">
+            <FormKit type="form" v-model="montre" @submit="upsertmontre">
 
 
 

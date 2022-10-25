@@ -1,28 +1,28 @@
 <template>
   <nav>
-    <div class="h-full flex flex-row  justify-between">
-      <div class="float-left m-4 ml-10">
+    <div class="h-full flex flex-row width bg-black justify-between">
+      <div class="float-left m-5 ml-10">
         <router-link class="text-black font-black " to="/">
-          <p class="font-black text-lg">TikTaK</p>
+          <p class="font-black text-white text-2xl">TikTaK</p>
 
         </router-link>
       </div>
-      <div class="flex flex-row gap-8 m-4 justify-center">
+      <div class="flex flex-row gap-20 m-6 justify-center ">
 
 
 
         <span>
-          <router-link class="text-black font-black " to="/index">
+          <router-link class="text-white font-black " to="/">
 
             <code class="font-mono">Accueil</code>
           </router-link>
         </span><span>
-          <router-link class="text-black font-black " to="/Personnalisation">
+          <router-link class="text-white font-black " to="/Personnalisation">
 
             <code class="font-mono">Personnalisation</code>
           </router-link>
         </span> <span>
-          <router-link class="text-black font-black " to="/Listeproduit">
+          <router-link class="text-white font-black " to="/Listeproduit">
 
             <code class="font-mono">Nos produits</code>
           </router-link>
@@ -55,10 +55,16 @@
 
   <!-- Affiche les pages -->
   <Suspense>
-    <router-view class="m-2 border-2 p-2" />
+    <router-view />
   </Suspense>
 </template>
 
 <script setup lang="ts">
 import { Bars3Icon } from "@heroicons/vue/20/solid";
 </script>
+
+<style>
+.width {
+  width: 1920px;
+}
+</style>
