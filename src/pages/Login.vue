@@ -92,8 +92,8 @@ supabase.auth.onAuthStateChange((event, session) => {
 
 
 <script>
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZqdnlneGRoZ3RiY2FtenBybHhpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjY2Nzk2MTMsImV4cCI6MTk4MjI1NTYxM30._dQ6SiPYpX0JXeC5sSUrHfjfWG3oIsTZI3-qfX_GDXM'
-const SUPABASE_URL = "https://vjvygxdhgtbcamzprlxi.supabase.co"
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9ybnlxYXNsZXBndW9jZW11dndlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjY2OTYwNTAsImV4cCI6MTk4MjI3MjA1MH0.cqYWu4dI6L6KV_i2ojRb-tH5qweqJQcPNoVPHd9tFyM'
+const SUPABASE_URL = "https://ornyqaslepguocemuvwe.supabase.co"
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 export default {
     methods: {

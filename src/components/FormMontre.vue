@@ -9,7 +9,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const props = defineProps(["id", "montre"]);
 
-const montre = ref<Montre>(props.data ?? {});
+const montre = ref({});
 
 if (props.id) {
     let { data, error } = await supabase
