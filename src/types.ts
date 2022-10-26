@@ -14,6 +14,22 @@ export const colors = {
     "#000000": "Noir",
     "#31312F": "Gris foncé",
     "#404041": "Gris",
+
+    "#750000": "Rouge foncé",
+    "#FF0000": "Rouge",
+
+    "#E5B300": "Jaune",
+    "#00D394": "Vert-bleu",
+    "#0081B9": "Bleu",
+    "#0041BE": "Bleu electrique",
+    "#1000C8": "Bleu marine",
+
+};
+
+export const colorscadran = {
+    "#000000": "Noir",
+    "#31312F": "Gris foncé",
+    "#404041": "Gris",
     "#FFFFFF": "Blanc",
     "#750000": "Rouge foncé",
     "#FF0000": "Rouge",
@@ -28,6 +44,7 @@ export const colors = {
     "#A91091": "Rose",
     "#B70037": "Rose-rouge",
 };
+
 
 export const shadowcolors = {
     "#000000": "Noir",
