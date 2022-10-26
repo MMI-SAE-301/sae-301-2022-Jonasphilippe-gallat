@@ -49,17 +49,20 @@ const exemples: Montre[] = [{
             besoin
             d’inspirations ? Découvrez nos exemples déja crées pour vous !</h1>
 
-        <div class="w-full justify-center flex flex-row gap-10">
+        <div class="w-full justify-center z-10 flex flex-row gap-10">
             <RouterLink v-for="Exemple, index in exemples" :to="{
                 name: 'montre-exemple-data',
                 params: { data: JSON.stringify(Exemple) },
             }">
-                <div class=" p-16 flex flex-row gap-24">
+                <div class=" p-16 z-20 flex flex-row gap-24">
                     <MontreFace class="w-64" v-bind="Exemple" />
 
                 </div>
             </RouterLink>
+
         </div>
+        <img class="absolute w-[1250px] -bottom-[850px] left-[350px]" src="../assets/personnalisation_bubble.png"
+            alt="bulles bleues">
         <router-link class="text-white font-black mx-auto mt-5 mb-20" to="/Listeproduit">
             <button
                 class="float-left font-archivo text-base mx-auto font-bold text-white bg-bleu_elec h-16 w-96 rounded-md">Découvrir
