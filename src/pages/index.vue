@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import MontreFace from "../components/MontreFace.vue";
+import homedesign from "../components/design/homedesign.vue"
+import BatteryIcon from "../components/design/BatteryIcon.vue"
+import ListIcon from "../components/design/ListIcon.vue"
+import ShieldIcon from "../components/design/ShieldIcon.vue"
+
 import type { Montre } from "../types";
 const exemples: Montre[] = [{
   bracelet: "#0FFFF0",
@@ -28,8 +33,7 @@ const exemples: Montre[] = [{
     </div>
 
     <div class="positionhomedesign ">
-
-      <img class="float-right w-11/12 mr-44" src="../assets/homedesign.png" alt="design">
+      <homedesign class="float-right w-11/12 mr-44" />
     </div>
     <div class="w-full h-full bg-black">
 
@@ -42,7 +46,7 @@ const exemples: Montre[] = [{
   </div>
   <div class="flex flex-row ">
     <img class="absolute top-60" src="../assets/watch-separate.png" alt="">
-    <div class="absolute right-80 mt-56">
+    <div class="absolute right-80 mt-64">
       <h2 class="mb-10 text-4xl font-bold">Découvrez nos gammes
         de montres<br> et notre panel de personnalisation
       </h2>
@@ -53,10 +57,46 @@ const exemples: Montre[] = [{
       </router-link>
     </div>
   </div>
-  <div>
+  <div class=" w-full h-[850px]"></div>
 
+  <div class="flex flex-row items-center gap-16 justify-center mb-32">
+    <div class=" w-96 h-px bg-black" />
+    <h3 class=" text-4xl font-bold "> Les avantages TikTaK</h3>
+    <div class=" w-96 h-px bg-black" />
+  </div>
+  <div class="flex flex-row justify-center items-center gap-80">
+
+    <ShieldIcon class="mb-6" />
+    <ListIcon />
+
+    <BatteryIcon />
   </div>
 
+  <div class="flex flex-row justify-center items-center gap-40">
+    <div class="flex flex-col gap-2 items-center">
+
+      <p class="text-xl">Résiste aux intempéries</p>
+      <p class="text-xl">Résiste à l’eau </p>
+      <p class="text-xl">Résiste à la chaleur</p>
+    </div>
+
+    <div class="flex flex-col gap-2 pl-16 pr-12 items-center justify-center">
+
+      <p class="text-xl">Informations physiologiques</p>
+      <p class="text-xl">Rythme cardiaque</p>
+      <p class="text-xl">Qualité du sommeil</p>
+    </div>
+
+    <div class="flex flex-col mb-8 items-center gap-2">
+
+      <p class="text-xl">Autonomie de 96h</p>
+      <p class="text-xl">Recharge complète en 6h </p>
+
+    </div>
+
+  </div>
+  <div class="mr-auto ml-auto w-5/6 h-px bg-black mt-48 mb-10" />
+  <img src="" alt="">
 </template>
 
 <style>
@@ -70,7 +110,7 @@ const exemples: Montre[] = [{
 .positionhomedesign {
   position: absolute;
   left: 50%;
-  top: -5%;
+  top: -10%;
 }
 
 .positionabsoluteleft {
