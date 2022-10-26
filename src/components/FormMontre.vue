@@ -3,6 +3,9 @@ import type { Montre } from "@/types";
 import { ref } from "vue";
 import { colors } from "@/types";
 import { shadowcolors } from "@/types";
+import { colorscadran } from "@/types";
+import { colorsbracelet } from "@/types";
+
 import MontreFace from "./MontreFace.vue";
 import { useRouter } from "vue-router";
 
@@ -32,20 +35,20 @@ async function upsertmontre(dataForm, node) {
 
 </script>
 <template>
-    <div class="bg-black">
+    <div class="bg-black flex flex-row w-full  ">
         <div class="flex justify-center items-center ml-48 gap-36   ">
 
 
-            <div class="float-right p-10 border-2 border-white rounded-xl ">
+            <div class="float-right p-10  border-2 border-white rounded-xl ">
 
-                <FormKit type="form" v-model="montre" @submit="upsertmontre">
+                <FormKit class="" type="form" v-model="montre" @submit="upsertmontre">
 
 
 
 
                     <p class="text-white absolute font-montserrat">Bracelet</p>
                     <FormKit class="text-white" name="bracelet" label="Bracelet" value="#FFFFFF" type="radio"
-                        :options="colors" :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
+                        :options="colorsbracelet" :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
                         input-class="peer sr-only" options-class="flex gap-1 mb-3 mt-1">
                         <template class="text-white" #label="context">
                             <div class=" text-white h-9 w-9 rounded-full mb-2 border border-gray-600 peer-checked:border-white peer-checked:border-2"
@@ -65,7 +68,7 @@ async function upsertmontre(dataForm, node) {
                     </FormKit>
                     <p class="text-white mb-2 absolute font-montserrat">Cadran_intérieur</p>
                     <FormKit class="text_white" name="cadran_interieur" label="Cadran interieur" value="#FFFFFF"
-                        type="radio" :options="colors"
+                        type="radio" :options="colorscadran"
                         :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
                         input-class="peer sr-only" options-class="flex gap-1 mb-3 mt-1">
                         <template #label="context">
@@ -89,23 +92,29 @@ async function upsertmontre(dataForm, node) {
                         :options="shadowcolors" :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
                         input-class="peer sr-only" options-class="flex gap-1 mb-3 mt-1">
                         <template #label="context">
-                            <div class="h-9 w-9 rounded-full mb-2 border border-gray-600 peer-checked:border-white peer-checked:border-2 "
+                            <div class="h-9 w-9 rounded-full mb-6 border border-gray-600 peer-checked:border-white peer-checked:border-2 "
                                 :style="{ backgroundColor: context.option.value }" />
                             <span class="sr-only">{{ context.option.label }}</span>
                         </template>
                     </FormKit>
-
-
-
+                    <div class="h-12 w-full gap-8 absolute flex flex-row">
+                        <button type="button"
+                            class="text-black font-button h-12 w-60 font-montserrat px-3  bg-bleu_elec rounded-md">Commander</button>
+                        <button type="button"
+                            class="text-black font-button h-12 w-60 font-montserrat px-3  bg-bleu_elec rounded-md">Commander</button>
+                    </div>
                 </FormKit>
-            </div>
-            <div class=" w-full h-full">
-                <MontreFace class="w-1/2 ml-24 m-10" v-bind="montre" id="profil" />
             </div>
 
 
         </div>
+
+        <div class="flex justify-center w-5/12 h-full bg-gradient-radial from-blue-900 via-black to-black">
+            <MontreFace class="w-1/3 h-1/2 ml-16 m-10 shadow-lg " v-bind="montre" id="profil" />
+
+        </div>
     </div>
+
 </template>
 
 <style>

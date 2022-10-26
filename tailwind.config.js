@@ -36,6 +36,9 @@ module.exports = {
         "700": 700,
         "button": 800,
         "900": 900,
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       }
     },
   },

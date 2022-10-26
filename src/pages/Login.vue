@@ -41,7 +41,7 @@ supabase.auth.onAuthStateChange((event, session) => {
                                     <input type="email" name="email" id="email" placeholder="exemple@mail.com"
                                         class="w-full  px-3 py-2 font-montserrat text-sm placeholder-gray-600 border border-gray-300 rounded-md " />
                                     <button
-                                        class="w-1/3 rounded-md h-8 font-montserrat border text-white border-white">Envoyer</button>
+                                        class="w-1/3 rounded-md> h-8 font-montserrat border text-white border-white">Envoyer</button>
                                 </div>
                             </div>
                             <div class="mb-6 flex justify-center">
