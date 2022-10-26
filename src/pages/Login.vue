@@ -16,8 +16,8 @@ supabase.auth.onAuthStateChange((event, session) => {
 })
 </script>
 
-<template>
-    <div>
+<template >
+    <div class="bg-black">
         <div class="">
             <div>
 
@@ -146,7 +146,7 @@ export default {
 
 <style>
 body {
-    background-color: black;
+    background-color: var(--beigebgbg)
 }
 
 .connectway {

@@ -4,7 +4,7 @@ import homedesign from "../components/design/homedesign.vue"
 import BatteryIcon from "../components/design/BatteryIcon.vue"
 import ListIcon from "../components/design/ListIcon.vue"
 import ShieldIcon from "../components/design/ShieldIcon.vue"
-
+import Price from "../components/design/Price.vue"
 import type { Montre } from "../types";
 const exemples: Montre[] = [{
   bracelet: "#0FFFF0",
@@ -21,7 +21,7 @@ const exemples: Montre[] = [{
 
   <div class="w-full homeheader">
     <div class="positionabsoluteleft m-32 flex flex-col gap-20 justify-start ">
-      <h1 class="text-9xl font-black text-white">Tik TaK</h1>
+      <h1 class="text-8xl font-black text-white">Tik TaK</h1>
       <h2 class="w-3/4 text-4xl text-gray-400">Vous propose de créer une montre <span
           class="text-blue-700 font-bold">unique</span> et propre à <span class="text-blue-700 font-bold">vos
           goûts.</span> </h2>
@@ -50,7 +50,7 @@ const exemples: Montre[] = [{
       <h2 class="mb-10 text-4xl font-bold">Découvrez nos gammes
         de montres<br> et notre panel de personnalisation
       </h2>
-      <p class="mb-10 text-xl">Composez votre montre de A à Z et profitez de <br> tous les avantages de TikTak</p>
+      <p class="mb-10 text-2xl">Composez votre montre de A à Z et profitez de <br> tous les avantages de TikTak</p>
       <router-link class="text-white font-black " to="/Personnalisation">
         <button class="float-left text-xl font-bold text-white bg-blue-700 h-16 w-96 rounded-md">Je compose ma montre
           !</button>
@@ -95,8 +95,32 @@ const exemples: Montre[] = [{
     </div>
 
   </div>
-  <div class="mr-auto ml-auto w-5/6 h-px bg-black mt-48 mb-10" />
-  <img src="" alt="">
+  <div class="mr-auto ml-auto w-5/6 h-px bg-black mt-48 mb-20" />
+
+  <div class="flex flex-row w-5/6 mr-auto ml-auto mb-20">
+    <img src="../assets/home_illustration_l.png" alt="photo composant electronique">
+    <div class="flex flex-col ml-20 items justify-end">
+      <p class="text-2xl mb-16">Profitez d’une technologie moderne mise à votre service pour un maximum de confort et
+        d’aisance
+      </p>
+      <router-link class="text-white font-black " to="/Personnalisation">
+        <button class="float-left text-xl font-bold text-white bg-blue-700 h-16 w-64 rounded-md">En savoir plus
+          !</button>
+      </router-link>
+    </div>
+  </div>
+  <div class="flex flex-row w-5/6 mr-auto ml-auto mb-20">
+    <div class="flex flex-col mr-20 items-end justify-end">
+      <p class="text-2xl mb-16">TikTak vous propose ses produits issus de la collection la plus récente a prix reduit.
+        Profitez dès maintenant des promotions!
+      </p>
+      <router-link class="text-white font-black " to="/Personnalisation">
+        <Price />
+      </router-link>
+    </div>
+    <img src="../assets/home_illustration_r.png" alt="photo composant electronique">
+
+  </div>
 </template>
 
 <style>
