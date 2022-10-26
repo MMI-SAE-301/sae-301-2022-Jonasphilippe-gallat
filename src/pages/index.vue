@@ -27,13 +27,33 @@ const exemples: Montre[] = [{
       </router-link>
     </div>
 
-    <div class="positionabsoluteright ">
-      <img class="positionabsolute2  w-4/6 z-10" src="../assets/WATCH.png" alt="">
-      <img class="float-right w-full mr-44" src="../assets/homedesign.png" alt="design">
+    <div class="positionhomedesign ">
+
+      <img class="float-right w-11/12 mr-44" src="../assets/homedesign.png" alt="design">
     </div>
     <div class="w-full h-full bg-black">
 
     </div>
+
+  </div>
+
+  <div class="flex justify-center align-middle h-28 w-full bg-cyan-900">
+    <h3 class="m-10 text-3xl text-white font-bold">PROFITEZ DE 25% DE PROMOTION SUR TOUS LES ARTICLES</h3>
+  </div>
+  <div class="flex flex-row ">
+    <img class="absolute top-60" src="../assets/watch-separate.png" alt="">
+    <div class="absolute right-80 mt-56">
+      <h2 class="mb-10 text-4xl font-bold">Découvrez nos gammes
+        de montres<br> et notre panel de personnalisation
+      </h2>
+      <p class="mb-10 text-xl">Composez votre montre de A à Z et profitez de <br> tous les avantages de TikTak</p>
+      <router-link class="text-white font-black " to="/Personnalisation">
+        <button class="float-left text-xl font-bold text-white bg-blue-700 h-16 w-96 rounded-md">Je compose ma montre
+          !</button>
+      </router-link>
+    </div>
+  </div>
+  <div>
 
   </div>
 
@@ -43,7 +63,14 @@ const exemples: Montre[] = [{
 .positionabsoluteright {
   position: absolute;
   left: 50%;
+  bottom: 5%;
 
+}
+
+.positionhomedesign {
+  position: absolute;
+  left: 50%;
+  top: -5%;
 }
 
 .positionabsoluteleft {
