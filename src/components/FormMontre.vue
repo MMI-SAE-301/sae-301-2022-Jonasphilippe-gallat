@@ -100,8 +100,8 @@ async function upsertmontre(dataForm, node) {
                     <div class="h-12 w-full gap-8 absolute flex flex-row">
                         <button type="button"
                             class="text-black font-button h-12 w-60 font-montserrat px-3  bg-bleu_elec rounded-md">Commander</button>
-                        <button type="button"
-                            class="text-black font-button h-12 w-60 font-montserrat px-3  bg-bleu_elec rounded-md">Commander</button>
+                        <button  @click="upsertmontre()" type="button"
+                            class="text-white font-500 h-12 w-60 font-montserrat px-3 border-2 border-white  bg-black rounded-md">Enregistrer</button>
                     </div>
                 </FormKit>
             </div>

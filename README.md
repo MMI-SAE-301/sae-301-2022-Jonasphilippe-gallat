@@ -2,10 +2,10 @@
 
 - **Nom :Philippe-Gallat**
 - **Prénom :Jonas**
-- **URL maquette Figma:**
+- **URL maquette Figma:https://www.figma.com/file/s1rshY5vuJBM4DAw9Dw3Nv/Untitled?node-id=1%3A19**
 - **URL publique du site :**
-- **URL projet Supabase :**
-  - [ ] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
+- **URL projet Supabase :https://ornyqaslepguocemuvwe.supabase.co**
+  - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
 # Auto-évaluation
 

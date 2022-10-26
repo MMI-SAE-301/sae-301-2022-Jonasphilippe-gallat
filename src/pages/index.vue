@@ -113,7 +113,7 @@ const exemples: Montre[] = [{
         un maximum de confort et
         d’aisance
       </p>
-      <router-link class="text-white font-black " to="/Personnalisation">
+      <router-link class="text-white font-black " to="/">
         <button class="float-left font-archivo font-900 text-white bg-bleu_elec h-16 w-64 rounded-md">En savoir plus
           !</button>
       </router-link>
