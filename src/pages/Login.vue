@@ -34,16 +34,21 @@ supabase.auth.onAuthStateChange((event, session) => {
 
                     <div class=" m-6">
                         <form class="mb-4">
-                            <div class="mb-6">
-                                <label for="email" class="block mb-2 font-montserrat text-sm text-gray-400 ">
+                            <div class="mb-6 flex flex-col gap-1">
+                                <label for="email" class="block  font-montserrat text-sm text-gray-400 ">
                                     Address mail</label>
-                                <input type="email" name="email" id="email" placeholder="exemple@mail.com"
-                                    class="w-full px-3 py-2 font-montserrat text-sm placeholder-gray-600 border border-gray-300 rounded-md " />
+                                <div class="flex flex-col items-end gap-4">
+                                    <input type="email" name="email" id="email" placeholder="exemple@mail.com"
+                                        class="w-full  px-3 py-2 font-montserrat text-sm placeholder-gray-600 border border-gray-300 rounded-md " />
+                                    <button
+                                        class="w-1/3 rounded-md h-8 font-montserrat border text-white border-white">Envoyer</button>
+                                </div>
                             </div>
-                            <div class="mb-6">
+                            <div class="mb-6 flex justify-center">
                                 <button type="button"
-                                    class="text-white font-montserrat w-full px-3 py-4  bg-blanctext ">SE
+                                    class="text-white  h-12 w-64  font-montserrat px-3 py-4  bg-bleu_elec rounded-md">SE
                                     CONNECTER</button>
+
                             </div>
 
                         </form>

@@ -43,53 +43,53 @@ async function upsertmontre(dataForm, node) {
 
 
 
-
+                    <p class="text-white absolute font-montserrat">Bracelet</p>
                     <FormKit class="text-white" name="bracelet" label="Bracelet" value="#FFFFFF" type="radio"
                         :options="colors" :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
                         input-class="peer sr-only" options-class="flex gap-1 mb-3 mt-1">
                         <template class="text-white" #label="context">
-                            <div class=" text-white h-9 w-9 rounded-full  border border-gray-600 peer-checked:border-white peer-checked:border-2"
+                            <div class=" text-white h-9 w-9 rounded-full mb-2 border border-gray-600 peer-checked:border-white peer-checked:border-2"
                                 :style="{ backgroundColor: context.option.value }" />
-                            <span class="sr-only">{{ context.option.label }}</span>
+
                         </template>
                     </FormKit>
-
-                    <FormKit name="cadran_exterieur" label="Cadran exterieur" value="#FFFFFF" type="radio"
+                    <p class="text-white mb-2 absolute font-montserrat">Cadran extérieur</p>
+                    <FormKit class="mt-2" name="cadran_exterieur" label="Cadran exterieur" value="#FFFFFF" type="radio"
                         :options="colors" :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
                         input-class="peer sr-only" options-class="flex gap-1 mb-3 mt-1">
-                        <template #label="context">
-                            <div class="h-9 w-9 rounded-full  border border-gray-600 peer-checked:border-white peer-checked:border-2"
+                        <template class="mt-2" #label="context">
+                            <div class="h-9 w-9 rounded-full mb-2 border border-gray-600 peer-checked:border-white peer-checked:border-2"
                                 :style="{ backgroundColor: context.option.value }" />
                             <span class="sr-only">{{ context.option.label }}</span>
                         </template>
                     </FormKit>
-
+                    <p class="text-white mb-2 absolute font-montserrat">Cadran_intérieur</p>
                     <FormKit class="text_white" name="cadran_interieur" label="Cadran interieur" value="#FFFFFF"
                         type="radio" :options="colors"
                         :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
                         input-class="peer sr-only" options-class="flex gap-1 mb-3 mt-1">
                         <template #label="context">
-                            <div class="h-9 w-9 rounded-full  border border-gray-600 peer-checked:border-white peer-checked:border-2"
+                            <div class="h-9 w-9 rounded-full mb-2 border border-gray-600 peer-checked:border-white peer-checked:border-2"
                                 :style="{ backgroundColor: context.option.value }" />
                             <span class="sr-only">{{ context.option.label }}</span>
                         </template>
                     </FormKit>
-
-                    <FormKit name="bouton" label="Boutons" value="#FFFFFF" type="radio" :options="colors"
-                        :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
+                    <p class="text-white mb-2 absolute font-montserrat">Boutons</p>
+                    <FormKit class="text-white" name="bouton" label="Boutons" value="#FFFFFF" type="radio"
+                        :options="colors" :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
                         input-class="peer sr-only" options-class="flex gap-1 mb-3 mt-1">
-                        <template #label="context">
-                            <div class="h-9 w-9 rounded-full  border border-gray-600 peer-checked:border-white peer-checked:border-2"
+                        <template class="text-white" #label="context">
+                            <div class="h-9 w-9 rounded-full mb-2 border border-gray-600 peer-checked:border-white text-white peer-checked:border-2"
                                 :style="{ backgroundColor: context.option.value }" />
-                            <span class="sr-only">{{ context.option.label }}</span>
+                            <span class="sr-only text-white">{{ context.option.label }}</span>
                         </template>
                     </FormKit>
-
+                    <p class="text-white mb-2 absolute font-montserrat">Fond d'écran</p>
                     <FormKit name="fond_boitier" label="Fond d'écran" value="#FFFFFF" type="radio"
                         :options="shadowcolors" :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }"
                         input-class="peer sr-only" options-class="flex gap-1 mb-3 mt-1">
                         <template #label="context">
-                            <div class="h-9 w-9 rounded-full border border-gray-600 peer-checked:border-white peer-checked:border-2 "
+                            <div class="h-9 w-9 rounded-full mb-2 border border-gray-600 peer-checked:border-white peer-checked:border-2 "
                                 :style="{ backgroundColor: context.option.value }" />
                             <span class="sr-only">{{ context.option.label }}</span>
                         </template>

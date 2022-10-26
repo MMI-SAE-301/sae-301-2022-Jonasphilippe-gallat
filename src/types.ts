@@ -12,6 +12,8 @@ export interface Montre {
 
 export const colors = {
     "#000000": "Noir",
+    "#31312F": "Gris foncé",
+    "#404041": "Gris",
     "#FFFFFF": "Blanc",
     "#750000": "Rouge foncé",
     "#FF0000": "Rouge",

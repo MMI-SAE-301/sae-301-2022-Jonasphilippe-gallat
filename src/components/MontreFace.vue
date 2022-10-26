@@ -208,14 +208,14 @@ withDefaults(defineProps<Montre>(), {
 
 
         <g id="ecran">
-            <text transform="translate(77.1 312.9)"
-                style="font-size:76px;fill:#fff;font-family:Broadway;letter-spacing:0.02500513980263158em">1O:1O</text>
-            <text transform="translate(110.1 239.9)"
-                style="font-size:30px;fill:#fff;font-family:Broadway;letter-spacing:-0.01201171875em">
+            <text transform="translate(75.1 312.9)"
+                style="font-size:100px;fill:#fff;font-family:Rubik;letter-spacing:0.02500513980263158em">1O:1O</text>
+            <text transform="translate(130.1 225.9)"
+                style="font-size:27px;fill:#fff;font-family:Rubik;letter-spacing:-0.01201171875em">
                 <tspan xml:space="preserve">Lun. 24 oct.</tspan>
             </text>
-            <text transform="translate(152.1 522.2)"
-                style="font-size:30px;fill:#fff;font-family:ArialMT, Arial;letter-spacing:-0.01201171875em">TiK•TaK</text>
+            <text transform="translate(162.1 525.2)"
+                style="font-size:25px;fill:#fff;font-family:ArialMT, Arial;letter-spacing:-0.01201171875em">TiK•TaK</text>
             <use width="35.9" height="35.92" transform="translate(287 397.1) scale(1.22)" xlink:href="#Chargement_4" />
             <use width="66.2" height="72" transform="translate(81.4 400.5) scale(0.64)" xlink:href="#Orb_-_Gris" />
             <use width="48" height="48" transform="translate(183.4 432.1)" xlink:href="#Puce_6_-_Gris" />
