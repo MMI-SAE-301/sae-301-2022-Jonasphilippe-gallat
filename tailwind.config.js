@@ -8,12 +8,35 @@ module.exports = {
     {
       colors: {
         'beigebgbg': '#F6EBE2',
-        "bleu_elec": "#0057ff"
+        "bleu_elec": "#0057ff",
+        "bleu_fonce": "#00143A"
       },
 
       fontFamily: {
-        'roboto': ['Roboto', 'sans-serif'],
+        'montserrat': ['Montserrat '],
+        'archivo': ['Archivo'],
       },
+      fontSize: {
+        "base": "1.25rem",
+        "lg": "1.6875rem",
+        "xl": "2.5rem",
+        "2xl": "3rem",
+        "3xl": "6rem",
+        "4xl": "9rem",
+
+      },
+      fontWeight: {
+
+        "100": 100,
+        "200": 200,
+        "300": 300,
+        "400": 400,
+        "500": 500,
+        "600": 600,
+        "700": 700,
+        "button": 800,
+        "900": 900,
+      }
     },
   },
   plugins: [

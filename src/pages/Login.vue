@@ -17,7 +17,7 @@ supabase.auth.onAuthStateChange((event, session) => {
 </script>
 
 <template >
-    <div class="bg-black">
+    <div class="bg-black h-[1000px]  ">
         <div class="">
             <div>
 
@@ -90,6 +90,7 @@ supabase.auth.onAuthStateChange((event, session) => {
             </div>
         </div>
     </div>
+
 </template>
 
 
