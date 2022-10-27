@@ -3,7 +3,7 @@
 - **Nom :Philippe-Gallat**
 - **Prénom :Jonas**
 - **URL maquette Figma:https://www.figma.com/file/s1rshY5vuJBM4DAw9Dw3Nv/Untitled?node-id=1%3A19**
-- **URL publique du site :**
+- **URL publique du site :https://sae-301-philippe-gallat.netlify.app/**
 - **URL projet Supabase :https://ornyqaslepguocemuvwe.supabase.co**
   - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
@@ -21,6 +21,9 @@ Vous avez rendu à la racine du projet :
 
 liens :
 [Lien vers premier commit](https://github.com/MMI-SAE-301/sae-301-2022-Jonasphilippe-gallat/commit/80a155273b7cc29e3a83e504b78aaaad49388413) ou page d'un commit sur Github.
+[Lien vers le huitième commit](https://github.com/MMI-SAE-301/sae-301-2022-Jonasphilippe-gallat/commit/80a155273b7cc29e3a83e504b78aaaad49388413) ou page d'un commit sur Github.
+[Lien vers App.vue Ligne 21](/src/App.vue#L21)
+
 
 Noté sur 40.
 
@@ -32,14 +35,14 @@ Noté sur 40.
 - Code HTML spécifiquement sémantique et accessible (0-1-2pts)
 
 - [x] usage de Classes utilitaires (1pt)
-  - lien vers sa définition [Import couleur et font](/tailwind.config.js#11)
-  - lien vers son usage[Utilisation](/index.vue#34)
+  - lien vers sa définition [Import couleur et font](/tailwind.config.js#L11)
+  - lien vers son usage[Utilisation](/index.vue#L34)
 - [x] Composants graphiques (0-1-2pts)
   - liens [icones](/src/components/design/homedesign.vue)
 - Mise en page CSS (0-1-2pts)
   - Quelles techniques (Grilles Flex...)
     - ...
-  - liens [Footer](/src/App.vue#68)
+  - liens [Footer](/src/App.vue#L68)
   - [x] Mise en page fluide
 
 - "tailwin.config.js" (0-1-2pts)
@@ -48,6 +51,6 @@ Noté sur 40.
  
 - Composants "accessibles" (0-1-2pts)
   - [x] textes "accessibles" (eg. 'sr-only')
- liens [Formkit](/src/components/FormMontre.vue#62)
+ liens [Formkit](/src/components/FormMontre.vue#L62)
 
 [^1]: Supprimez les mentions inutiles.
