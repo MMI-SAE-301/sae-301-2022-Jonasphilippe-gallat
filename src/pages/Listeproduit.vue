@@ -1,6 +1,22 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import MontreFace from "../components/MontreFace.vue";
 import type { Montre } from "../types";
+
+const listeMontre = ref()
+
+async function Montreuser() {
+    const { error, data } = await supabase
+        .from('montre')
+        .select('*')
+        .eq('utilisateur', supabase.auth.user().id)
+    listeMontre.value = data
+}
+
+Montreuser()
+
+const montre = defineProps(["id", "Montre"]);
+
 const exemples: Montre[] = [{
     bracelet: "#750000",
     cadran_exterieur: "#404041",
@@ -26,6 +42,7 @@ const exemples: Montre[] = [{
 
 },
 ];
+
 </script>
 
 
@@ -47,17 +64,17 @@ const exemples: Montre[] = [{
             <div class="w-3/4 h-1 mx-auto mt-28 bg-white"></div>
 
             <h1 class="text-2xl ml-auto mr-auto pt-16 mb-14 font-archivo font-700 text-white">Mes modèles</h1>
+            <div class="w-full flex justify-center">
 
-            <div class="w-full justify-center flex flex-row gap-10">
-                <RouterLink v-for="Exemple, index in exemples" to="/Personnalisation">
-                    <div class=" p-16 flex flex-row gap-24">
-                        <MontreFace class="w-64" v-bind="Exemple" />
 
+                <div class=" w-7/12 pb-20 m- grid grid-cols-3 pt-16 gap-44
+        ">
+                    <div v-for="Liste_Montre in listeMontre" :key="Liste_Montre.id"
+                        class="grid grid-cols-3 justify-center">
+                        <MontreFace class="w-64" v-bind="Liste_Montre" />
                     </div>
-                </RouterLink>
+                </div>
             </div>
-
-
         </div>
     </section>
 

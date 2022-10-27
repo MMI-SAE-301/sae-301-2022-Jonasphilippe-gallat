@@ -34,14 +34,6 @@ async function upsertmontre(dataForm, node) {
 }
 
 
-async function command(dataForm, node) {
-    const { data, error } = await supabase.from("montre").upsert(dataForm);
-    if (click) node.setErrors([error.message]);
-    else {
-        node.setErrors([]);
-        router.push({ name: "montre-edit-id", params: { id: data[0].id } });
-    }
-}
 
 </script>
 <template>
@@ -109,7 +101,7 @@ async function command(dataForm, node) {
                     </FormKit>
                     <div class="flex flex-row gap-5">
                         <FormKit type="submit"
-                            input-class="text-black font-button h-12 w-60 font-montserrat px-3  bg-bleu_elec rounded-md ">
+                            input-class="text-white font-button h-12 w-60 font-montserrat px-3 border-2 border-white bg-black rounded-md ">
                             Enregistrer </FormKit>
 
 

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import MontreFace from "../components/MontreFace.vue";
 import homedesign from "../components/design/homedesign.vue"
 import BatteryIcon from "../components/design/BatteryIcon.vue"
 import ListIcon from "../components/design/ListIcon.vue"
@@ -22,7 +21,7 @@ const exemples: Montre[] = [{
 
 <template>
 
-  <div class="w-full homeheader">
+  <div class="w-full homeheader ">
     <div class="positionabsoluteleft m-32 flex flex-col gap-4 justify-start ">
       <h1 class="text-3xl font-archivo font-700 text-white">Tik TaK</h1>
       <h2 class="w-3/4 font-montserrat font-400 text-lg text-gray-400">Vous propose de créer une montre <span
@@ -155,7 +154,7 @@ const exemples: Montre[] = [{
 
 }
 
-.positionabsolute2 {
+&& .positionabsolute2 {
   position: absolute;
   right: 45%;
   bottom: 10%;
