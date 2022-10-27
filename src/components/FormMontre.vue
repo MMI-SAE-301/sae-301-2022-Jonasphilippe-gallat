@@ -10,9 +10,9 @@ import MontreFace from "./MontreFace.vue";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
-const props = defineProps(["id", "montre"]);
+const props = defineProps(["id", "data"]);
 
-const montre = ref({});
+const montre = ref<Montre>(props.data ?? {});
 
 if (props.id) {
     let { data, error } = await supabase
@@ -27,6 +27,16 @@ if (props.id) {
 async function upsertmontre(dataForm, node) {
     const { data, error } = await supabase.from("montre").upsert(dataForm);
     if (error) node.setErrors([error.message]);
+    else {
+        node.setErrors([]);
+        router.push({ name: "montre-edit-id", params: { id: data[0].id } });
+    }
+}
+
+
+async function command(dataForm, node) {
+    const { data, error } = await supabase.from("montre").upsert(dataForm);
+    if (click) node.setErrors([error.message]);
     else {
         node.setErrors([]);
         router.push({ name: "montre-edit-id", params: { id: data[0].id } });
@@ -97,12 +107,19 @@ async function upsertmontre(dataForm, node) {
                             <span class="sr-only">{{ context.option.label }}</span>
                         </template>
                     </FormKit>
-                    <div class="h-12 w-full gap-8 absolute flex flex-row">
+                    <div class="flex flex-row gap-5">
+                        <FormKit type="submit"
+                            input-class="text-black font-button h-12 w-60 font-montserrat px-3  bg-bleu_elec rounded-md ">
+                            Enregistrer </FormKit>
+
+
                         <button type="button"
                             class="text-black font-button h-12 w-60 font-montserrat px-3  bg-bleu_elec rounded-md">Commander</button>
-                        <button @click="upsertmontre()" type="button"
-                            class="text-white font-500 h-12 w-60 font-montserrat px-3 border-2 border-white  bg-black rounded-md">Enregistrer</button>
+
                     </div>
+
+
+
                 </FormKit>
             </div>
 

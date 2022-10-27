@@ -34,26 +34,22 @@ const exemples: Montre[] = [{
         <div class="bg-black flex justify-center flex-col ">
             <h1 class="text-2xl ml-auto mr-auto pt-16 mb-14 font-archivo font-700 text-white">Nos inspirations</h1>
 
-            <div class="w-full justify-center flex flex-row gap-10">
-                <RouterLink v-for="Exemple, index in exemples" :to="{
+            <div class="w-full justify-center flex flex-row gap-44">
+                <RouterLink v-for="Exemple in exemples" :key="Exemple.id" :to="{
                     name: 'montre-exemple-data',
                     params: { data: JSON.stringify(Exemple) },
                 }">
-                    <div class=" p-16 flex flex-row gap-24">
-                        <MontreFace class="w-64" v-bind="Exemple" />
-
-                    </div>
+                    <MontreFace class="w-64" v-bind="Exemple" />
                 </RouterLink>
             </div>
-            <div class="w-3/4 h-1 mx-auto mt-9 bg-white"></div>
+
+
+            <div class="w-3/4 h-1 mx-auto mt-28 bg-white"></div>
 
             <h1 class="text-2xl ml-auto mr-auto pt-16 mb-14 font-archivo font-700 text-white">Mes modèles</h1>
 
             <div class="w-full justify-center flex flex-row gap-10">
-                <RouterLink v-for="Exemple, index in exemples" :to="{
-                    name: 'montre-exemple-data',
-                    params: { data: JSON.stringify(Exemple) },
-                }">
+                <RouterLink v-for="Exemple, index in exemples" to="/Personnalisation">
                     <div class=" p-16 flex flex-row gap-24">
                         <MontreFace class="w-64" v-bind="Exemple" />
 
