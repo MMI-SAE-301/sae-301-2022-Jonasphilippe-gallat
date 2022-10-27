@@ -19,8 +19,8 @@ Vous avez rendu à la racine du projet :
 
 ## R312 | Intégrer ([Pierre Pracht : AC 2401](https://moodle.univ-fcomte.fr/mod/assign/view.php?id=612668))
 
-Pour les liens :
-[vers des fichiers](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes#relative-links-and-image-paths-in-readme-files) ou page d'un commit sur Github.
+liens :
+[Lien vers premier commit](https://github.com/MMI-SAE-301/sae-301-2022-Jonasphilippe-gallat/commit/80a155273b7cc29e3a83e504b78aaaad49388413) ou page d'un commit sur Github.
 
 Noté sur 40.
 

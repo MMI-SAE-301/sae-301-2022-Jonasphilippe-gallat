@@ -12,6 +12,9 @@ declare global {
 // Pour tester dans la console, dé-commenter la ligne qui suit :
 globalThis.supabase = supabase;
 
+//@ts-ignore
+globalThis.supabase = supabase;
+
 export const user = ref(supabase.auth.user());
 supabase.auth.onAuthStateChange(() => {
   user.value = supabase.auth.user();
